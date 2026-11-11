@@ -7,8 +7,7 @@ using UnityEngine;
 
         private void Start()
         {
-            // The scene may be saved while any panel is open in the editor.
-            // Always begin the app on the first panel so the normal flow works.
+         
             ShowPanel(0);
         }
 

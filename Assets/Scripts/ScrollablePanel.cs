@@ -36,8 +36,7 @@ public class ScrollablePanel : MonoBehaviour
         }
 
         var viewportMask = viewport.GetComponent<RectMask2D>() ?? viewport.gameObject.AddComponent<RectMask2D>();
-        // Keep every element visible while arranging the page in the Scene view.
-        // The mask is restored automatically when the app is running.
+ 
         viewportMask.enabled = Application.isPlaying;
 
         var content = viewport.Find("Content") as RectTransform;
